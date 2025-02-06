@@ -1,0 +1,16 @@
+ٍّ@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .toggle-btn {
+    top: 20px;
+    left: 10px;
+  }
+
+  .glowing-button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}

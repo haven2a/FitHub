@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق اللياقة البدنية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>مرحبًا بك في تطبيق اللياقة البدنية</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="workouts.html">التمارين</a></li>
+                    <li><a href="progress.html">التقدم</a></li>
+                    <li><a href="nutrition.html">التغذية</a></li>
+                    <li><a href="profile.html">الملف الشخصي</a></li>
+                    <li><a href="login.html">تسجيل الدخول</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section>
+                <h2>ابدأ رحلتك نحو اللياقة اليوم!</h2>
+                <p>اختر خطة التمارين المناسبة لك، وتتبع تقدمك يوميًا.</p>
+                <a href="signup.html" class="btn">سجّل الآن</a>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 تطبيق اللياقة البدنية - جميع الحقوق محفوظة</p>
+        </footer>
+    </div>
+</body>
+</html>

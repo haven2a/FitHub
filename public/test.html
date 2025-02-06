@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التدريبات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>تمارين اللياقة البدنية</h1>
+      <p class="glowing-text">اختر التمرين المناسب وابدأ رحلتك نحو اللياقة البدنية المثالية.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="workout-categories">
+      <h2>اختر مستوى التمرين</h2>
+      <div class="workout-levels">
+        <button class="level-btn">مبتدئ</button>
+        <button class="level-btn">متوسط</button>
+        <button class="level-btn">متقدم</button>
+      </div>
+    </div>
+
+    <!-- تمارين للمستوى المبتدئ -->
+    <div class="workout-card">
+      <h3>تمرين الضغط (Push-ups)</h3>
+      <img src="push-up.jpg" alt="تمرين الضغط" class="workout-image">
+      <p class="description">يعد تمرين الضغط من أفضل التمارين لتحسين القوة العضلية للجزء العلوي من الجسم.</p>
+      <button class="glowing-button">ابدأ التمرين</button>
+    </div>
+
+    <!-- تمارين للمستوى المتوسط -->
+    <div class="workout-card">
+      <h3>تمرين القرفصاء (Squats)</h3>
+      <img src="squat.jpg" alt="تمرين القرفصاء" class="workout-image">
+      <p class="description">تمرين القرفصاء يساعد على تقوية عضلات الفخذين والمؤخرة.</p>
+      <button class="glowing-button">ابدأ التمرين</button>
+    </div>
+
+    <!-- تمارين للمستوى المتقدم -->
+    <div class="workout-card">
+      <h3>تمرين الرفع الميت (Deadlifts)</h3>
+      <img src="deadlift.jpg" alt="تمرين الرفع الميت" class="workout-image">
+      <p class="description">الرفع الميت هو تمرين ممتاز لتقوية الظهر السفلي والساقين.</p>
+      <button class="glowing-button">ابدأ التمرين</button>
+    </div>
+
+    <!-- إضافات تفاعلية -->
+    <div class="progress-tracker">
+      <h3>تتبع تقدمك</h3>
+      <p>سجل التمرين الذي قمت به وحقق أهدافك في الوقت المحدد.</p>
+      <button class="glowing-button">تسجيل التمرين</button>
+    </div>
+  </main>
+
+  <script>
+    // يمكنك إضافة وظائف تفاعلية هنا إذا أردت مثل تتبع التمرين
+    document.querySelectorAll(".level-btn").forEach(button => {
+      button.addEventListener("click", function() {
+        alert("لقد اخترت مستوى: " + this.innerText);
+      });
+    });
+  </script>
+
+</body>
+</html>
