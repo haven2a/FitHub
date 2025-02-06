@@ -1,18 +1,18 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-  <meta charset="UTF-8">
-  <title>تسجيل الدخول</title>
-</head>
-<body>
-  <h1>تسجيل الدخول</h1>
-  <form id="loginForm">
-    <label for="email">البريد الإلكتروني:</label>
-    <input type="email" id="email" name="email" required><br><br>
-    <label for="password">كلمة المرور:</label>
-    <input type="password" id="password" name="password" required><br><br>
-    <button type="submit">دخول</button>
-  </form>
-  <script src="app.js"></script>
-</body>
-</html>
+// استيراد المكتبات اللازمة
+const express = require('express');
+const path = require('path');
+const app = express();
+const port = 3000;
+
+// تقديم الملفات الثابتة من مجلد public
+app.use(express.static(path.join(__dirname, 'public')));
+
+// إعداد نقطة نهاية للصفحة الرئيسية
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
+// تشغيل الخادم على المنفذ المحدد
+app.listen(port, () => {
+  console.log(`الخادم يعمل على http://localhost:${port}`);
+});
